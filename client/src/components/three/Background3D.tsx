@@ -79,7 +79,7 @@ export default function Background3D() {
     let time = 0;
     const radius = 2;
     const height = 1;
-    const speed = 0.005; // Increased speed
+    const speed = 0.008; // Increased speed for faster movement
 
     // Animation
     function animate() {
@@ -105,7 +105,7 @@ export default function Background3D() {
 
       // Rotate propellers faster
       body.children.forEach((child, index) => {
-        if (index > 4) { // Only rotate propellers
+        if (index > 3) { // Only rotate propellers
           child.rotation.y += 0.8;
         }
       });

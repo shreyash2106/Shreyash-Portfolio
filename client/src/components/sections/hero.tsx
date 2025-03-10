@@ -17,10 +17,10 @@ export default function Hero() {
       >
         <h1 className="text-5xl sm:text-6xl font-bold">
           <span className="text-[#B86EFF] hover-glow">Hi, I'm </span>
-          <span className="text-[#E6F1FF]">Shreyash</span>
+          <span className="text-[#E6F1FF] font-serif italic">Shreyash</span>
         </h1>
         <p className="text-xl sm:text-2xl text-[#E6F1FF]/80 max-w-2xl">
-          A passionate software engineer specializing in Machine Learning, AI, and Full-Stack Development. Currently pursuing my M.S. in Computer Science at Purdue University.
+          A passionate software engineer specializing in Machine Learning and AI. Currently pursuing my M.S. in Computer Science at Purdue University.
         </p>
         <div className="flex space-x-4">
           <Button
