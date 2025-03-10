@@ -14,16 +14,51 @@ export default function Background3D() {
     renderer.setSize(window.innerWidth, window.innerHeight);
     mountRef.current.appendChild(renderer.domElement);
 
-    // Create cube
-    const geometry = new THREE.BoxGeometry(1, 1, 1);
-    const material = new THREE.MeshPhongMaterial({ 
+    // Create drone body
+    const body = new THREE.Group();
+
+    // Main body (center cube)
+    const bodyGeometry = new THREE.BoxGeometry(0.5, 0.2, 0.5);
+    const bodyMaterial = new THREE.MeshPhongMaterial({ 
       color: 0xB86EFF,
       emissive: 0x2a0066,
       specular: 0xB86EFF,
       shininess: 100
     });
-    const cube = new THREE.Mesh(geometry, material);
-    scene.add(cube);
+    const bodyMesh = new THREE.Mesh(bodyGeometry, bodyMaterial);
+    body.add(bodyMesh);
+
+    // Arms
+    const armGeometry = new THREE.CylinderGeometry(0.05, 0.05, 1, 8);
+    const armMaterial = new THREE.MeshPhongMaterial({ color: 0x171738 });
+
+    // Create 4 arms
+    const positions = [
+      { rotation: 0, x: 0.5, z: 0.5 },
+      { rotation: Math.PI/2, x: -0.5, z: 0.5 },
+      { rotation: Math.PI, x: -0.5, z: -0.5 },
+      { rotation: -Math.PI/2, x: 0.5, z: -0.5 }
+    ];
+
+    positions.forEach(pos => {
+      const arm = new THREE.Mesh(armGeometry, armMaterial);
+      arm.rotation.y = pos.rotation;
+      arm.position.set(pos.x, 0, pos.z);
+      body.add(arm);
+
+      // Add propeller to each arm
+      const propGeometry = new THREE.CylinderGeometry(0.2, 0.2, 0.05, 16);
+      const propMaterial = new THREE.MeshPhongMaterial({ 
+        color: 0xB86EFF,
+        transparent: true,
+        opacity: 0.6
+      });
+      const propeller = new THREE.Mesh(propGeometry, propMaterial);
+      propeller.position.set(pos.x, 0, pos.z);
+      body.add(propeller);
+    });
+
+    scene.add(body);
 
     // Add lights
     const light = new THREE.DirectionalLight(0xffffff, 1);
@@ -34,12 +69,40 @@ export default function Background3D() {
     scene.add(ambientLight);
 
     camera.position.z = 5;
+    camera.position.y = 2;
+    camera.lookAt(0, 0, 0);
+
+    // Animation variables
+    let time = 0;
+    const radius = 3;
+    const height = 1;
+    const speed = 0.001;
 
     // Animation
     function animate() {
       requestAnimationFrame(animate);
-      cube.rotation.x += 0.01;
-      cube.rotation.y += 0.01;
+
+      time += speed;
+
+      // Circular flight pattern with height variation
+      body.position.x = Math.cos(time) * radius;
+      body.position.z = Math.sin(time) * radius;
+      body.position.y = Math.sin(time * 2) * height + 2;
+
+      // Rotate drone to face direction of movement
+      body.rotation.y = time + Math.PI/2;
+
+      // Tilt in the direction of movement
+      body.rotation.z = Math.sin(time) * 0.1;
+      body.rotation.x = Math.cos(time) * 0.1;
+
+      // Rotate propellers
+      body.children.forEach((child, index) => {
+        if (index > 4) { // Only rotate propellers
+          child.rotation.y += 0.5;
+        }
+      });
+
       renderer.render(scene, camera);
     }
     animate();
@@ -56,8 +119,12 @@ export default function Background3D() {
     return () => {
       window.removeEventListener('resize', handleResize);
       mountRef.current?.removeChild(renderer.domElement);
-      geometry.dispose();
-      material.dispose();
+      scene.traverse((object) => {
+        if (object instanceof THREE.Mesh) {
+          object.geometry.dispose();
+          object.material.dispose();
+        }
+      });
       renderer.dispose();
     };
   }, []);
