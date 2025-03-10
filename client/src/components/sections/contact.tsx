@@ -28,7 +28,7 @@ export default function Contact() {
                 <Button
                   asChild
                   variant="outline"
-                  className="border-[#64FFDA] text-[#64FFDA] hover:bg-[#64FFDA]/10"
+                  className="border-[#B86EFF] text-[#B86EFF] hover:bg-[#B86EFF]/10"
                 >
                   <a href="mailto:shreyash.sridhar@gmail.com">
                     <Mail className="mr-2 h-4 w-4" />
@@ -38,7 +38,7 @@ export default function Contact() {
                 <Button
                   asChild
                   variant="outline"
-                  className="border-[#64FFDA] text-[#64FFDA] hover:bg-[#64FFDA]/10"
+                  className="border-[#B86EFF] text-[#B86EFF] hover:bg-[#B86EFF]/10"
                 >
                   <a
                     href="https://www.linkedin.com/in/shreyashsridhariyengar"
@@ -52,7 +52,7 @@ export default function Contact() {
                 <Button
                   asChild
                   variant="outline"
-                  className="border-[#64FFDA] text-[#64FFDA] hover:bg-[#64FFDA]/10"
+                  className="border-[#B86EFF] text-[#B86EFF] hover:bg-[#B86EFF]/10"
                 >
                   <a
                     href="https://github.com/shreyash2106"

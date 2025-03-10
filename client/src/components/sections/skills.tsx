@@ -21,7 +21,7 @@ export default function Skills() {
             viewport={{ once: true }}
             className="space-y-4"
           >
-            <h3 className="text-xl font-semibold text-[#64FFDA]">{category}</h3>
+            <h3 className="text-xl font-semibold text-[#B86EFF]">{category}</h3>
             <div className="flex flex-wrap gap-2">
               {items.map((item) => (
                 <Badge

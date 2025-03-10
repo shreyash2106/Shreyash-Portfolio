@@ -25,7 +25,7 @@ export default function Navbar() {
         <a
           key={item.href}
           href={item.href}
-          className="text-[#E6F1FF] hover:text-[#64FFDA] transition-colors"
+          className="text-[#E6F1FF] hover:text-[#B86EFF] transition-colors"
           onClick={() => setIsOpen(false)}
         >
           {item.label}
@@ -38,7 +38,7 @@ export default function Navbar() {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-[#020B1C]/80 backdrop-blur-sm border-b border-[#171738]">
       <div className="container mx-auto px-4">
         <div className="h-16 flex items-center justify-between">
-          <Link href="/" className="text-[#64FFDA] text-xl font-bold">
+          <Link href="/" className="text-[#B86EFF] text-xl font-bold">
             Yash
           </Link>
 

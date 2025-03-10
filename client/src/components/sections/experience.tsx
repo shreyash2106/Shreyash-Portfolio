@@ -24,7 +24,7 @@ export default function Experience() {
               <CardContent className="pt-6">
                 <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
                   <div>
-                    <h3 className="text-xl font-bold text-[#64FFDA]">
+                    <h3 className="text-xl font-bold text-[#B86EFF]">
                       {job.title}
                     </h3>
                     <p className="text-[#E6F1FF]">{job.company}</p>
@@ -39,11 +39,11 @@ export default function Experience() {
                       ) : (
                         <>
                           {resp.text}{' '}
-                          <a 
-                            href={resp.link} 
-                            target="_blank" 
-                            rel="noopener noreferrer" 
-                            className="text-[#64FFDA] hover:underline"
+                          <a
+                            href={resp.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-[#B86EFF] hover:underline"
                           >
                             {resp.linkText}
                           </a>

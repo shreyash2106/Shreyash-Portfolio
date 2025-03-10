@@ -25,7 +25,7 @@ export default function ProjectCard({
     >
       <Card className="bg-[#0A192F] border-[#171738] h-full">
         <CardHeader>
-          <CardTitle className="text-[#64FFDA]">{title}</CardTitle>
+          <CardTitle className="text-[#B86EFF]">{title}</CardTitle>
         </CardHeader>
         <CardContent className="space-y-4">
           <p className="text-[#E6F1FF]/80">{description}</p>
@@ -46,7 +46,7 @@ export default function ProjectCard({
                 href={github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[#E6F1FF] hover:text-[#64FFDA] transition-colors"
+                className="text-[#E6F1FF] hover:text-[#B86EFF] transition-colors"
               >
                 <Github className="h-5 w-5" />
               </a>
@@ -56,7 +56,7 @@ export default function ProjectCard({
                 href={link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[#E6F1FF] hover:text-[#64FFDA] transition-colors"
+                className="text-[#E6F1FF] hover:text-[#B86EFF] transition-colors"
               >
                 <LinkIcon className="h-5 w-5" />
               </a>
