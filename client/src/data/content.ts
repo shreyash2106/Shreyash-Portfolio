@@ -42,7 +42,9 @@ export const experience = [
     responsibilities: [
       "Developed a JAX-based framework for Multi-Agent Signal Temporal Logic using Diffusion Models",
       "Implemented multi-processing in diffusion models for simultaneous plan generation across agents",
-      "Implemented asynchronous planning with dynamic goal adaptation while maintaining safety constraints",
+      "Integrated GCBF+ for safe multi-agent control and GNN-based planners for efficient navigation",
+      "Built support for multiple environments (drone, Dubins car, double integrator) with pretrained controllers",
+      "Implemented asynchronous planning with dynamic goal adaptation while maintaining safety constraints"
     ],
   },
   {
@@ -51,13 +53,13 @@ export const experience = [
     period: "January 2024 - May 2024",
     responsibilities: [
       "Led research on dynamic path planning for drone navigation using Large Language Models",
-      "Worked on model benchmarking, evaluation, and dashboards to track the performance of AutoGluon across different datasets, frameworks, and model hyperparameter configurations",
+      "Developed novel techniques using model finetuning, constrained decoding and reinforcement learning",
       {
-        text: "Accepted to ICRA (International Conference on Robotics and Automation) 2025. Read our paper",
+        text: "Read our paper",
         link: "https://arxiv.org/abs/2409.19471",
-        linkText: "here!",
+        linkText: "here"
       },
-      "Achieved significant improvements in navigation safety and efficiency through LLM-based planning",
+      "Achieved significant improvements in navigation safety and efficiency through LLM-based planning"
     ],
   },
   {
