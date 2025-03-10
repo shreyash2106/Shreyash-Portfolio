@@ -1,0 +1,121 @@
+Here is a text version of your LinkedIn profile:
+
+---
+
+**Shreyash Sridhar Iyengar**  
+Generative AI Research Assistant @ Purdue | MS CS @ Purdue | BS EECS & DS @ UC Berkeley | Former MLE Intern @ AWS Deep Learning  
+West Lafayette, Indiana, United States  
+
+### **Contact**  
+- Phone: 510-697-6372  
+- Email: shreyash2106@berkeley.edu  
+- LinkedIn: [linkedin.com/in/shreyashsridhariyengar](https://www.linkedin.com/in/shreyashsridhariyengar)  
+- GitHub: [github.com/shreyash2106](https://github.com/shreyash2106)  
+
+### **Summary**  
+Currently immersed in AI-driven robotics at Purdue University, focusing on leveraging language models and diffusion models for robotic-agent planning. With a foundation in Electrical Engineering and Computer Sciences (EECS) and Data Science from UC Berkeley, I am currently completing my Master's degree in Computer Science, with a planned graduation in May 2025.  
+My experience at Amazon Web Services as a Machine Learning Engineering Intern allowed me to develop **AutoGluon-RAG**, an open-source Python package for users to obtain an end-to-end RAG pipeline in three lines of code.  
+Skilled in Deep Learning, Machine Learning, Python, Golang, Data Science, and Full-Stack software.
+
+---
+
+### **Experience**  
+
+#### **Purdue University**  
+*Research Study Assistant (August 2024 – Present | 8 months) – West Lafayette, Indiana*  
+- Working on Diffusion Models for Multi-Agent Planning in Robotics Systems.  
+- Building an end-to-end system in Jax.  
+- Under Prof. Suresh Jagannathan.  
+
+#### **Amazon Web Services (AWS)**  
+*Machine Learning Engineering Intern @ AWS Deep Learning (May 2024 – August 2024 | 4 months) – Bellevue, Washington*  
+- Built **AutoGluon-RAG**, an automated Retrieval Augmented Generation (RAG) package.  
+- Provides a production-ready RAG pipeline with multiple models, vector databases, rerankers, and retrieval methods.  
+
+*Machine Learning Intern @ AWS AI (May 2023 – August 2023 | 4 months) – Bellevue, Washington*  
+- Worked on **AutoGluon**, an open-source AutoML library for training and deploying ML models.  
+- Developed benchmarking and visualization dashboards for performance tracking.  
+
+#### **Purdue Computer Science**  
+*Research Assistant (January 2024 – May 2024 | 5 months) – West Lafayette, Indiana*  
+- Worked on **Efficient Path Planning and Verification in Robotics using LLMs**.  
+- Submitted a paper to **ICRA 2025**.  
+- Under Prof. Suresh Jagannathan; collaborated with Prof. Lin Tan & Prof. Aniket Bera.  
+
+#### **UC Berkeley EECS**  
+*Head Lab Teaching Assistant (May 2022 – May 2023 | 1 year 1 month) – Berkeley, California*  
+- Led **EECS 16A**, a core course with 1000+ students, focusing on signal processing, ML, control, and circuit design.  
+
+#### **Amazon**  
+*SDE Intern (Summer 2022 | May 2022 – August 2022 | 4 months) – Seattle, Washington*  
+- Worked on a **Self-Healing Network** for Amazon Fulfillment Centers.  
+- Developed an API to automate manual network searches for troubleshooting.  
+
+#### **Neurotech@Berkeley**  
+*Vice President (April 2021 – May 2022 | 1 year 2 months)*  
+- Oversaw project collaborations with startups.  
+- Supervised software and ML-based neurotech projects.  
+
+*Software Developer (February 2020 – May 2021 | 1 year 4 months)*  
+- Built ML models to analyze EEG data for brain-controlled applications.  
+
+#### **Hewlett Packard Enterprise (HPE)**  
+*Software Engineering Intern (June 2021 – August 2021 | 3 months)*  
+- Worked on High Performance Computing (HPC) microservices.  
+- Developed **cache packages in GoLang**, reducing response time by 66.67%.  
+
+#### **Neurable**  
+*Project Manager (January 2021 – May 2021 | 5 months)*  
+- Led a team to develop **EEG-based real-time streaming and visualization tools** for BCI headsets.  
+
+*Lead Software Developer (August 2020 – January 2021 | 6 months)*  
+- Built a **real-time EEG neurofeedback game using Unity3D**.  
+
+#### **Injazat**  
+*SWE Intern (July 2020 – August 2020 | 2 months) – Abu Dhabi, UAE*  
+- Worked on **AI for medical imaging analysis** and **Augmented Reality visualization tools**.  
+
+#### **Machine Learning at Berkeley**  
+*Software Developer (January 2020 – April 2020 | 4 months)*  
+- Developed ML models for **autonomous driving simulations**.  
+
+#### **ClubRise Abu Dhabi**  
+*Events Manager (August 2017 – August 2019 | 2 years 1 month)*  
+- Organized fundraisers and social awareness campaigns.  
+
+#### **TEDx**  
+*Organizer (June 2017 – April 2019 | 1 year 11 months) – Abu Dhabi, UAE*  
+- Core organizer of **TEDxYouth@ADIS** events in 2017 & 2018.  
+- Speaker at the inaugural event.  
+
+#### **Cleveland Clinic Abu Dhabi**  
+*Volunteer (July 2017 – August 2017 | 2 months) – Abu Dhabi, UAE*  
+- Assisted in **emergency, cardiology, and robotics departments**.  
+
+---
+
+### **Education**  
+- **Purdue University** – *Master of Science (MS), Computer Science (August 2023 – May 2025)*  
+- **UC Berkeley College of Engineering** – *Bachelor of Science (BS), Electrical Engineering & Computer Science (EECS) (August 2019 – May 2023)*  
+- **Abu Dhabi Indian School** – *High School Diploma (2007 – 2019)*  
+
+---
+
+### **Skills**  
+- **Retrieval Augmented Generation (RAG)**  
+- **Amazon Web Services (AWS)**  
+- **Python (Programming Language)**  
+
+### **Languages**  
+- **English** (Full Professional)  
+- **Hindi** (Professional Working)  
+- **Tamil** (Limited Working)  
+- **French** (Limited Working)  
+
+### **Honors & Awards**  
+- **CalHacks 6.0 BlackRock API Prize**  
+- **SCET Certificate in Entrepreneurship & Technology (IP)**  
+
+---
+
+This is a structured version of your LinkedIn profile. Let me know if you need any modifications!

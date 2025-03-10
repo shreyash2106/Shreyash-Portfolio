@@ -1,0 +1,74 @@
+Here is a text-based version of your resume:
+
+---
+
+**Shreyash Sridhar Iyengar**  
+📧 shreyash.sridhar@gmail.com | 📞 510-697-6372  
+🔗 [LinkedIn](https://www.linkedin.com/in/shreyashsridhariyengar/)  
+
+---
+
+### **Skills**  
+- **Programming:** Python, Java, Golang, C, C++, C#, SQL  
+- **Machine Learning & AI:** Deep Learning, Large Language Models, Retrieval Augmented Generation, Computer Vision  
+- **Cloud & HPC:** AWS, EC2, Cloud Computing (IaaS), High-Performance Computing  
+- **Software Development:** Data Science, Web Development, Game Development, Robotics, Computer Architecture, Linux  
+
+---
+
+### **Education**  
+
+**Purdue University** *(Aug 2023 - Present)*  
+**M.S. Computer Science (GPA: 3.9)*  
+- Research on dynamic path planning for drone navigation using Large Language Models (ICRA 2025).  
+- Developing a JAX-based framework for Multi-Agent Signal Temporal Logic using Diffusion Models.  
+
+**University of California, Berkeley** *(Aug 2019 - May 2023)*  
+**B.S. Electrical Engineering & Computer Science (GPA: 3.6)*  
+- Minor: Data Science  
+- Head Undergraduate Student Instructor (Lab) for EECS 16A (~1000 students)  
+- Vice President, Neurotech@Berkeley  
+
+---
+
+### **Work Experience**  
+
+#### **AWS AI - Machine Learning Intern** *(May 2024 - Aug 2024)* | Bellevue, WA  
+- Developed an open-source, automated RAG (Retrieval Augmented Generation) package.  
+- Users can create a production-level, inference-ready RAG pipeline in three lines of code.  
+- Package supports multiple models, vector databases, and retrieval methods.  
+
+🔗 [AutoGluon-RAG](https://github.com/autogluon/autogluon-rag/)  
+
+#### **AWS AI - Machine Learning Intern** *(May 2023 - Aug 2023)* | Bellevue, WA  
+- Contributed to **AutoGluon**, an open-source AutoML framework.  
+- Developed benchmarking tools to track performance across datasets & frameworks.  
+
+🔗 [AutoGluon Dashboard](https://github.com/autogluon/autogluon-dashboard)  
+
+#### **Amazon - Software Development Intern** *(May 2022 - Aug 2022)* | Seattle, WA  
+- Worked on **Self-Healing Networks** for Amazon Fulfillment Centers to reduce network downtime.  
+- Built a Python API to automate searches previously performed manually by network engineers.  
+
+#### **Hewlett Packard Enterprise - Software Engineering Intern** *(Jun 2021 - Aug 2022)*  
+- Developed **High-Performance Computing (HPC) microservices** under HPE’s Greenlake cloud service.  
+- Built a GoLang-based LRU cache reducing API response time by **66.67%**.  
+- Integrated **Elasticsearch, Logstash, and Kibana (ELK)** for HPC analytics.  
+
+---
+
+### **Projects**  
+
+#### **Co-Op LLM: LLMs Working Together to Play Chess** *(Mar 2024 - May 2024)*  
+- Explored LLM-based chess strategies using **Spherical Linear Interpolation** and structured LLM debates.  
+- Applied reinforcement learning for strategic decision-making.  
+
+#### **bwalloc** *(Oct 2023 - Dec 2023)*  
+- Developed an **adaptive bandwidth allocation algorithm** for real-time multi-stream video analytics.  
+- Used **Mixed-Integer Linear Programming (MILP)** for optimized network resource usage.  
+
+🔗 [Research Paper](https://arxiv.org/pdf/2409.19471)  
+
+---
+
+If you need modifications or formatting for specific platforms (like Markdown, LaTeX, or HTML), let me know!
