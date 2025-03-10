@@ -9,7 +9,7 @@ export default function Background3D() {
 
     // Setup
     const scene = new THREE.Scene();
-    const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+    const camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 0.1, 1000);
     const renderer = new THREE.WebGLRenderer({ alpha: true });
     renderer.setSize(window.innerWidth, window.innerHeight);
     mountRef.current.appendChild(renderer.domElement);
@@ -77,9 +77,9 @@ export default function Background3D() {
 
     // Animation variables
     let time = 0;
-    const radius = 3;
+    const radius = 2;
     const height = 1;
-    const speed = 0.003; // Increased speed
+    const speed = 0.005; // Increased speed
 
     // Animation
     function animate() {
@@ -90,7 +90,7 @@ export default function Background3D() {
       // More dynamic flight pattern
       const x = Math.cos(time) * radius + Math.sin(time * 2) * (radius / 2);
       const z = Math.sin(time) * radius + Math.cos(time * 3) * (radius / 2);
-      const y = Math.sin(time * 2) * height + Math.cos(time * 4) * (height / 2) + 2;
+      const y = Math.sin(time * 2) * height + Math.cos(time * 4) * (height / 2) + 1.5;
 
       body.position.x = x;
       body.position.z = z;
