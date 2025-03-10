@@ -36,7 +36,7 @@ export default function About() {
             <CardContent className="pt-6 space-y-6">
               {Object.entries(about.interests).map(([category, items]) => (
                 <div key={category}>
-                  <h3 className="text-lg font-semibold text-[#64FFDA] mb-2">
+                  <h3 className="text-lg font-semibold text-[#B86EFF] mb-2">
                     {category}
                   </h3>
                   <ul className="list-disc list-inside text-[#E6F1FF]/80">
