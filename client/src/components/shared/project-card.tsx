@@ -23,24 +23,26 @@ export default function ProjectCard({
       whileHover={{ y: -5 }}
       transition={{ duration: 0.2 }}
     >
-      <Card className="bg-[#0A192F] border-[#171738] h-full">
+      <Card className="bg-[#0A192F] border-[#171738] h-full min-h-[400px] flex flex-col">
         <CardHeader>
           <CardTitle className="text-[#B86EFF]">{title}</CardTitle>
         </CardHeader>
-        <CardContent className="space-y-4">
-          <p className="text-[#E6F1FF]/80">{description}</p>
-          <div className="flex flex-wrap gap-2">
-            {skills.map((skill) => (
-              <Badge
-                key={skill}
-                variant="secondary"
-                className="bg-[#171738] text-[#E6F1FF]"
-              >
-                {skill}
-              </Badge>
-            ))}
+        <CardContent className="flex flex-col flex-grow justify-between space-y-4">
+          <div className="space-y-4">
+            <p className="text-[#E6F1FF]/80">{description}</p>
+            <div className="flex flex-wrap gap-2">
+              {skills.map((skill) => (
+                <Badge
+                  key={skill}
+                  variant="secondary"
+                  className="bg-[#171738] text-[#E6F1FF]"
+                >
+                  {skill}
+                </Badge>
+              ))}
+            </div>
           </div>
-          <div className="flex space-x-4 pt-4">
+          <div className="flex space-x-4">
             {github && (
               <a
                 href={github}

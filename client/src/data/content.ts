@@ -2,34 +2,34 @@ export const projects = [
   {
     title: "AutoGluon-RAG",
     description:
-      "An open-source, automated RAG package for creating production-level, inference-ready RAG pipelines in three lines of code. Supports multiple models, vector databases, and retrieval methods.",
+      "An open-source, automated RAG package for creating production-level, inference-ready RAG pipelines in three lines of code. Supports multiple models, vector databases, and retrieval methods. Developed during my internship at AWS AI, this tool simplifies the implementation of Retrieval-Augmented Generation systems.",
     github: "https://github.com/autogluon/autogluon-rag",
     skills: ["Python", "RAG", "Machine Learning", "Deep Learning"],
   },
   {
     title: "Co-Op LLM Chess",
     description:
-      "Explored LLM-based chess strategies using Spherical Linear Interpolation and structured LLM debates. Applied reinforcement learning for strategic decision-making.",
+      "Explored LLM-based chess strategies using Spherical Linear Interpolation and structured LLM debates. Applied reinforcement learning for strategic decision-making in a cooperative game setting. Implemented novel approaches to combine language model capabilities with game theory principles.",
     skills: ["LLM", "Reinforcement Learning", "Python"],
   },
   {
     title: "bwalloc",
     description:
-      "Developed an adaptive bandwidth allocation algorithm for real-time multi-stream video analytics using Mixed-Integer Linear Programming (MILP).",
+      "Developed an adaptive bandwidth allocation algorithm for real-time multi-stream video analytics using Mixed-Integer Linear Programming (MILP). Optimized resource utilization across multiple video streams while maintaining quality of service requirements. Implemented dynamic adjustment based on network conditions.",
     link: "https://arxiv.org/pdf/2409.19471",
     skills: ["MILP", "Video Analytics", "Python"],
   },
   {
     title: "minGPT Reimplementation",
     description:
-      "Reimplemented minGPT using Flax and Jax, implementing causal self-attention, transformer MLP, and encoder/decoder components.",
+      "Reimplemented minGPT using Flax and Jax, implementing causal self-attention, transformer MLP, and encoder/decoder components. Enhanced the original implementation with improved performance characteristics and added new features for better training stability and inference speed.",
     github: "https://github.com/shreyash2106/minGPT",
     skills: ["Jax", "Flax", "Deep Learning", "NLP"],
   },
   {
     title: "Jedi X-Wing Starfighter",
     description:
-      "Hand-motion-controlled drone using computer vision and robotics. Integrated Google MediaPipe for hand tracking and ROS for drone control.",
+      "Hand-motion-controlled drone using computer vision and robotics. Integrated Google MediaPipe for hand tracking and ROS for drone control. Implemented real-time gesture recognition and mapping to drone movements, with safety constraints and smooth trajectory planning.",
     skills: ["Robotics", "Computer Vision", "ROS", "Python"],
   },
 ];

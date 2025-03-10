@@ -1,5 +1,5 @@
-import { useEffect, useRef } from 'react';
-import * as THREE from 'three';
+import { useEffect, useRef } from "react";
+import * as THREE from "three";
 
 export default function Background3D() {
   const mountRef = useRef<HTMLDivElement>(null);
@@ -9,7 +9,12 @@ export default function Background3D() {
 
     // Setup
     const scene = new THREE.Scene();
-    const camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 0.1, 1000);
+    const camera = new THREE.PerspectiveCamera(
+      60,
+      window.innerWidth / window.innerHeight,
+      0.1,
+      1000,
+    );
     const renderer = new THREE.WebGLRenderer({ alpha: true });
     renderer.setSize(window.innerWidth, window.innerHeight);
     mountRef.current.appendChild(renderer.domElement);
@@ -19,11 +24,11 @@ export default function Background3D() {
 
     // Main body (center cube)
     const bodyGeometry = new THREE.BoxGeometry(0.5, 0.2, 0.5);
-    const bodyMaterial = new THREE.MeshPhongMaterial({ 
-      color: 0xB86EFF,
+    const bodyMaterial = new THREE.MeshPhongMaterial({
+      color: 0xb86eff,
       emissive: 0x2a0066,
-      specular: 0xB86EFF,
-      shininess: 100
+      specular: 0xb86eff,
+      shininess: 100,
     });
     const bodyMesh = new THREE.Mesh(bodyGeometry, bodyMaterial);
     body.add(bodyMesh);
@@ -35,12 +40,12 @@ export default function Background3D() {
     // Create 4 arms
     const positions = [
       { rotation: 0, x: 0.5, z: 0.5 },
-      { rotation: Math.PI/2, x: -0.5, z: 0.5 },
+      { rotation: Math.PI / 2, x: -0.5, z: 0.5 },
       { rotation: Math.PI, x: -0.5, z: -0.5 },
-      { rotation: -Math.PI/2, x: 0.5, z: -0.5 }
+      { rotation: -Math.PI / 2, x: 0.5, z: -0.5 },
     ];
 
-    positions.forEach(pos => {
+    positions.forEach((pos) => {
       const arm = new THREE.Mesh(armGeometry, armMaterial);
       arm.rotation.y = pos.rotation;
       arm.position.set(pos.x, 0, pos.z);
@@ -48,10 +53,10 @@ export default function Background3D() {
 
       // Add propeller to each arm
       const propGeometry = new THREE.CylinderGeometry(0.2, 0.2, 0.05, 16);
-      const propMaterial = new THREE.MeshPhongMaterial({ 
-        color: 0xB86EFF,
+      const propMaterial = new THREE.MeshPhongMaterial({
+        color: 0xb86eff,
         transparent: true,
-        opacity: 0.6
+        opacity: 0.6,
       });
       const propeller = new THREE.Mesh(propGeometry, propMaterial);
       propeller.position.set(pos.x, 0, pos.z);
@@ -79,7 +84,7 @@ export default function Background3D() {
     let time = 0;
     const radius = 2;
     const height = 1;
-    const speed = 0.008; // Increased speed for faster movement
+    const speed = 0.006; // Increased speed for faster movement
 
     // Animation
     function animate() {
@@ -90,14 +95,15 @@ export default function Background3D() {
       // More dynamic flight pattern
       const x = Math.cos(time) * radius + Math.sin(time * 2) * (radius / 2);
       const z = Math.sin(time) * radius + Math.cos(time * 3) * (radius / 2);
-      const y = Math.sin(time * 2) * height + Math.cos(time * 4) * (height / 2) + 1.5;
+      const y =
+        Math.sin(time * 2) * height + Math.cos(time * 4) * (height / 2) + 1.5;
 
       body.position.x = x;
       body.position.z = z;
       body.position.y = y;
 
       // Rotate drone to face direction of movement
-      body.rotation.y = time + Math.PI/2;
+      body.rotation.y = time + Math.PI / 2;
 
       // More pronounced tilt
       body.rotation.z = Math.sin(time) * 0.2;
@@ -105,7 +111,8 @@ export default function Background3D() {
 
       // Rotate propellers faster
       body.children.forEach((child, index) => {
-        if (index > 3) { // Only rotate propellers
+        if (index > 3) {
+          // Only rotate propellers
           child.rotation.y += 0.8;
         }
       });
@@ -120,11 +127,11 @@ export default function Background3D() {
       camera.updateProjectionMatrix();
       renderer.setSize(window.innerWidth, window.innerHeight);
     }
-    window.addEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
 
     // Cleanup
     return () => {
-      window.removeEventListener('resize', handleResize);
+      window.removeEventListener("resize", handleResize);
       mountRef.current?.removeChild(renderer.domElement);
       scene.traverse((object) => {
         if (object instanceof THREE.Mesh) {
@@ -136,5 +143,7 @@ export default function Background3D() {
     };
   }, []);
 
-  return <div ref={mountRef} className="absolute top-0 left-0 w-full h-full z-0" />;
+  return (
+    <div ref={mountRef} className="absolute top-0 left-0 w-full h-full z-0" />
+  );
 }
