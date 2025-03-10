@@ -58,6 +58,9 @@ export default function Background3D() {
       body.add(propeller);
     });
 
+    // Scale down the entire drone
+    body.scale.set(0.4, 0.4, 0.4);
+
     scene.add(body);
 
     // Add lights
@@ -76,7 +79,7 @@ export default function Background3D() {
     let time = 0;
     const radius = 3;
     const height = 1;
-    const speed = 0.001;
+    const speed = 0.003; // Increased speed
 
     // Animation
     function animate() {
@@ -84,22 +87,26 @@ export default function Background3D() {
 
       time += speed;
 
-      // Circular flight pattern with height variation
-      body.position.x = Math.cos(time) * radius;
-      body.position.z = Math.sin(time) * radius;
-      body.position.y = Math.sin(time * 2) * height + 2;
+      // More dynamic flight pattern
+      const x = Math.cos(time) * radius + Math.sin(time * 2) * (radius / 2);
+      const z = Math.sin(time) * radius + Math.cos(time * 3) * (radius / 2);
+      const y = Math.sin(time * 2) * height + Math.cos(time * 4) * (height / 2) + 2;
+
+      body.position.x = x;
+      body.position.z = z;
+      body.position.y = y;
 
       // Rotate drone to face direction of movement
       body.rotation.y = time + Math.PI/2;
 
-      // Tilt in the direction of movement
-      body.rotation.z = Math.sin(time) * 0.1;
-      body.rotation.x = Math.cos(time) * 0.1;
+      // More pronounced tilt
+      body.rotation.z = Math.sin(time) * 0.2;
+      body.rotation.x = Math.cos(time) * 0.2;
 
-      // Rotate propellers
+      // Rotate propellers faster
       body.children.forEach((child, index) => {
         if (index > 4) { // Only rotate propellers
-          child.rotation.y += 0.5;
+          child.rotation.y += 0.8;
         }
       });
 
