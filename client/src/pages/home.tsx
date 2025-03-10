@@ -9,13 +9,16 @@ import Footer from "@/components/layout/footer";
 import { motion } from "framer-motion";
 
 const backgroundVariants = {
+  initial: {
+    backgroundPosition: "0% 0%"
+  },
   animate: {
     backgroundPosition: ["0% 0%", "100% 100%"],
     transition: {
       duration: 20,
       ease: "linear",
       repeat: Infinity,
-      repeatType: "reverse"
+      repeatType: "mirror"
     }
   }
 };
@@ -24,8 +27,9 @@ export default function Home() {
   return (
     <motion.div 
       className="min-h-screen bg-gradient-to-br from-[#130B2B] via-[#1D1147] to-[#2D1B69] text-[#E6F1FF] relative overflow-hidden"
-      variants={backgroundVariants}
+      initial="initial"
       animate="animate"
+      variants={backgroundVariants}
     >
       {/* Neural Network Animation Background */}
       <div className="absolute inset-0 w-full h-full opacity-10 pointer-events-none">
