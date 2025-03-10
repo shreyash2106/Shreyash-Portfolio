@@ -31,6 +31,28 @@ export const projects = [
 
 export const experience = [
   {
+    title: "Research Study Assistant",
+    company: "Purdue University",
+    period: "August 2024 - Present",
+    responsibilities: [
+      "Developing a framework in JAX for enhancing control of Multi-Agent Signal Temporal Logic using Diffusion Models",
+      "Working on dynamic path planning for drone navigation using LLMs",
+      "Research accepted at ICRA 2025 focusing on safe and efficient task planning using LLMs",
+      "Implemented novel techniques including equivalence voting and constrained decoding for LLM-based planning"
+    ]
+  },
+  {
+    title: "Research Assistant",
+    company: "Purdue University",
+    period: "January 2024 - May 2024",
+    responsibilities: [
+      "Led research on SELP: Safe Efficient LLM Planner for robot agents",
+      "Achieved 10.8% improvement in safety rate and 19.8% improvement in plan efficiency for drone navigation",
+      "Published in ICRA 2025: https://arxiv.org/abs/2409.19471",
+      "Collaborated with Prof. Suresh Jagannathan, Prof. Lin Tan & Prof. Aniket Bera"
+    ]
+  },
+  {
     title: "Machine Learning Intern",
     company: "AWS AI",
     period: "May 2024 - Aug 2024",

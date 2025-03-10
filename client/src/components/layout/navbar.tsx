@@ -39,7 +39,7 @@ export default function Navbar() {
       <div className="container mx-auto px-4">
         <div className="h-16 flex items-center justify-between">
           <Link href="/" className="text-[#64FFDA] text-xl font-bold">
-            SSI
+            Yash
           </Link>
 
           {isMobile ? (
