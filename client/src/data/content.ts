@@ -33,12 +33,13 @@ export const experience = [
   {
     title: "Research Study Assistant",
     company: "Purdue University",
-    period: "August 2024 - Present",
+    period: "August 2024 - December 2024",
     responsibilities: [
-      "Developing a framework in JAX for enhancing control of Multi-Agent Signal Temporal Logic using Diffusion Models",
-      "Working on dynamic path planning for drone navigation using LLMs",
-      "Research accepted at ICRA 2025 focusing on safe and efficient task planning using LLMs",
-      "Implemented novel techniques including equivalence voting and constrained decoding for LLM-based planning"
+      "Developed a JAX-based framework for Multi-Agent Signal Temporal Logic using Diffusion Models",
+      "Implemented multi-processing in diffusion models for simultaneous plan generation across agents",
+      "Integrated GCBF+ for safe multi-agent control and GNN-based planners for efficient navigation",
+      "Built support for multiple environments (drone, Dubins car, double integrator) with pretrained controllers",
+      "Implemented asynchronous planning with dynamic goal adaptation while maintaining safety constraints"
     ]
   },
   {
@@ -46,10 +47,10 @@ export const experience = [
     company: "Purdue University",
     period: "January 2024 - May 2024",
     responsibilities: [
-      "Led research on SELP: Safe Efficient LLM Planner for robot agents",
-      "Achieved 10.8% improvement in safety rate and 19.8% improvement in plan efficiency for drone navigation",
-      "Published in ICRA 2025: https://arxiv.org/abs/2409.19471",
-      "Collaborated with Prof. Suresh Jagannathan, Prof. Lin Tan & Prof. Aniket Bera"
+      "Led research on dynamic path planning for drone navigation using Large Language Models",
+      "Developed novel techniques using model finetuning, constrained decoding and reinforcement learning",
+      "Research accepted at ICRA 2025: https://arxiv.org/abs/2409.19471",
+      "Achieved significant improvements in navigation safety and efficiency through LLM-based planning"
     ]
   },
   {
