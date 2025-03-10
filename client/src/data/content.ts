@@ -42,9 +42,7 @@ export const experience = [
     responsibilities: [
       "Developed a JAX-based framework for Multi-Agent Signal Temporal Logic using Diffusion Models",
       "Implemented multi-processing in diffusion models for simultaneous plan generation across agents",
-      "Integrated GCBF+ for safe multi-agent control and GNN-based planners for efficient navigation",
-      "Built support for multiple environments (drone, Dubins car, double integrator) with pretrained controllers",
-      "Implemented asynchronous planning with dynamic goal adaptation while maintaining safety constraints"
+      "Implemented asynchronous planning with dynamic goal adaptation while maintaining safety constraints",
     ],
   },
   {
@@ -57,9 +55,9 @@ export const experience = [
       {
         text: "Read our paper",
         link: "https://arxiv.org/abs/2409.19471",
-        linkText: "here"
+        linkText: "here",
       },
-      "Achieved significant improvements in navigation safety and efficiency through LLM-based planning"
+      "Achieved significant improvements in navigation safety and efficiency through LLM-based planning",
     ],
   },
   {
