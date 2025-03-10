@@ -29,7 +29,7 @@ export default function Background3D() {
     const light = new THREE.DirectionalLight(0xffffff, 1);
     light.position.set(1, 1, 1);
     scene.add(light);
-    
+
     const ambientLight = new THREE.AmbientLight(0x404040);
     scene.add(ambientLight);
 
@@ -62,5 +62,5 @@ export default function Background3D() {
     };
   }, []);
 
-  return <div ref={mountRef} className="fixed top-0 left-0 w-full h-full -z-10" />;
+  return <div ref={mountRef} className="absolute top-0 left-0 w-full h-full z-0" />;
 }

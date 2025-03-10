@@ -1,15 +1,19 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ChevronDown } from "lucide-react";
+import Background3D from "@/components/three/Background3D";
 
 export default function Hero() {
   return (
-    <section className="min-h-[calc(100vh-4rem)] flex flex-col justify-center">
+    <section className="min-h-[calc(100vh-4rem)] flex flex-col justify-center relative overflow-hidden">
+      <Background3D />
+      <div className="neural-bg" />
+
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-        className="space-y-6 slide-up"
+        className="space-y-6 slide-up relative z-10"
       >
         <h1 className="text-5xl sm:text-6xl font-bold">
           <span className="text-[#B86EFF] hover-glow">Hi, I'm </span>
@@ -43,7 +47,7 @@ export default function Hero() {
           repeat: Infinity,
           ease: "easeInOut",
         }}
-        className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
+        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10"
       >
         <ChevronDown className="h-8 w-8 text-[#B86EFF]" />
       </motion.div>

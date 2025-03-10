@@ -13,12 +13,12 @@
 }
 
 .neural-bg {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -1;
+  z-index: 1;
   opacity: 0.2;
   background: 
     linear-gradient(to right, #B86EFF 1px, transparent 1px) 0 0,
