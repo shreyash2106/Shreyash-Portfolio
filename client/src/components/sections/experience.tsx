@@ -33,7 +33,23 @@ export default function Experience() {
                 </div>
                 <ul className="list-disc list-inside space-y-2 text-[#E6F1FF]/80">
                   {job.responsibilities.map((resp, i) => (
-                    <li key={i}>{resp}</li>
+                    <li key={i}>
+                      {typeof resp === 'string' ? (
+                        resp
+                      ) : (
+                        <>
+                          {resp.text}{' '}
+                          <a 
+                            href={resp.link} 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            className="text-[#64FFDA] hover:underline"
+                          >
+                            {resp.linkText}
+                          </a>
+                        </>
+                      )}
+                    </li>
                   ))}
                 </ul>
               </CardContent>

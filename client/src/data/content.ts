@@ -41,8 +41,10 @@ export const experience = [
     period: "August 2024 - December 2024",
     responsibilities: [
       "Developed a JAX-based framework for Multi-Agent Signal Temporal Logic using Diffusion Models",
-      "Implemented multi-processing using JAX in diffusion models for simultaneous plan generation across agents",
-      "Implemented asynchronous planning with dynamic goal adaptation while maintaining safety constraints",
+      "Implemented multi-processing in diffusion models for simultaneous plan generation across agents",
+      "Integrated GCBF+ for safe multi-agent control and GNN-based planners for efficient navigation",
+      "Built support for multiple environments (drone, Dubins car, double integrator) with pretrained controllers",
+      "Implemented asynchronous planning with dynamic goal adaptation while maintaining safety constraints"
     ],
   },
   {
@@ -52,7 +54,11 @@ export const experience = [
     responsibilities: [
       "Led research on dynamic path planning for drone navigation using Large Language Models",
       "Developed novel techniques using model finetuning, constrained decoding and reinforcement learning",
-      `Read our paper <a href="https://arxiv.org/abs/2409.19471" target="_blank" rel="noopener noreferrer" class="text-[#64FFDA] hover:underline">here</a>`,
+      {
+        text: "Read our paper",
+        link: "https://arxiv.org/abs/2409.19471",
+        linkText: "here"
+      },
       "Achieved significant improvements in navigation safety and efficiency through LLM-based planning"
     ],
   },
