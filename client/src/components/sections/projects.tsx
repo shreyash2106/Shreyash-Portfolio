@@ -10,7 +10,7 @@ export default function Projects() {
 
   // Simulate loading for demo
   useEffect(() => {
-    const timer = setTimeout(() => setLoading(false), 2000);
+    const timer = setTimeout(() => setLoading(false), 3000); // Increased to 3 seconds
     return () => clearTimeout(timer);
   }, []);
 
