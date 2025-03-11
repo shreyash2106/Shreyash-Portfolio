@@ -56,11 +56,12 @@ export default function Hero() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="text-center group"
               >
-                <div className="w-20 mx-auto flex items-center justify-center text-[#B86EFF] hover:text-[#B86EFF]/80 transition-colors duration-300">
+                <div className="mx-auto flex items-center justify-center">
                   <img 
                     src={src} 
                     alt={alt} 
-                    className="h-8 w-auto object-contain" 
+                    className="h-12 w-auto object-contain"
+                    style={{ filter: 'brightness(0) invert(1) sepia(1) saturate(3) hue-rotate(230deg)' }}
                   />
                 </div>
               </motion.div>
