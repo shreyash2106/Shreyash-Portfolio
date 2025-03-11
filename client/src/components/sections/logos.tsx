@@ -37,11 +37,19 @@ const BerkeleyLogo = () => (
 );
 
 const PurdueLogo = () => (
-  <img src="/images/purdue.png" alt="Purdue University Logo" className="w-32 h-8" />
+  <img
+    src="/images/purdue.png"
+    alt="Purdue University Logo"
+    className="w-32 h-8"
+  />
 );
 
 const HPELogo = () => (
-  <img src="/images/hpe.png" alt="Hewlett Packard Enterprise Logo" className="w-32 h-8" />
+  <img
+    src="/images/hpe.png"
+    alt="Hewlett Packard Enterprise Logo"
+    className="w-32 h-8"
+  />
 );
 
 const AWSAILogo = () => (
