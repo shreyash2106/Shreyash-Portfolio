@@ -10,33 +10,35 @@ export const projects = [
     title: "Co-Op LLM Chess",
     description:
       "Explored LLM-based chess strategies using Spherical Linear Interpolation and structured LLM debates. Applied reinforcement learning for strategic decision-making in a cooperative game setting. Implemented novel approaches to combine language model capabilities with game theory principles.",
+    github: "https://github.com/shreyash2106/LLM_Chess_Team",
     skills: ["LLM", "Reinforcement Learning", "Python"],
   },
   {
     title: "bwalloc",
     description:
       "Developed an adaptive bandwidth allocation algorithm for real-time multi-stream video analytics using Mixed-Integer Linear Programming (MILP). Optimized resource utilization across multiple video streams while maintaining quality of service requirements. Implemented dynamic adjustment based on network conditions.",
-    link: "https://arxiv.org/pdf/2409.19471",
+    github: "https://github.com/kshitijalwadhi/CS536-bwalloc/tree/main",
     skills: ["MILP", "Video Analytics", "Python"],
   },
   {
     title: "minGPT Reimplementation",
     description:
       "Reimplemented minGPT using Flax and Jax, implementing causal self-attention, transformer MLP, and encoder/decoder components. Enhanced the original implementation with improved performance characteristics and added new features for better training stability and inference speed.",
-    github: "https://github.com/shreyash2106/minGPT",
     skills: ["Jax", "Flax", "Deep Learning", "NLP"],
   },
   {
     title: "Jedi X-Wing Starfighter",
     description:
       "Hand-motion-controlled drone using computer vision and robotics. Integrated Google MediaPipe for hand tracking and ROS for drone control. Implemented real-time gesture recognition and mapping to drone movements, with safety constraints and smooth trajectory planning.",
+    link: "https://sites.google.com/berkeley.edu/106a-xwing-starfighter/home",
+    github: "https://github.com/KhanWhale/proj106a",
     skills: ["Robotics", "Computer Vision", "ROS", "Python"],
   },
 ];
 
 export const experience = [
   {
-    title: "Research Study Assistant",
+    title: "Research Assistant I",
     company: "Purdue University",
     period: "August 2024 - December 2024",
     responsibilities: [
@@ -46,7 +48,7 @@ export const experience = [
     ],
   },
   {
-    title: "Research Assistant",
+    title: "Research Assistant II",
     company: "Purdue University",
     period: "January 2024 - May 2024",
     responsibilities: [

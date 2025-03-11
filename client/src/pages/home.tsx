@@ -1,5 +1,6 @@
 import Navbar from "@/components/layout/navbar";
 import Hero from "@/components/sections/hero";
+import Logos from "@/components/sections/logos";
 import Projects from "@/components/sections/projects";
 import Experience from "@/components/sections/experience";
 import Skills from "@/components/sections/skills";
@@ -13,6 +14,7 @@ export default function Home() {
       <Navbar />
       <main className="container mx-auto px-4 py-16 space-y-32">
         <Hero />
+        <Logos />
         <Projects />
         <Experience />
         <Skills />
