@@ -33,12 +33,12 @@ export default function Logos() {
 
 // Custom image components for institutions
 const BerkeleyLogo = () => (
-  <img src="/images/berkeley.png" alt="UC Berkeley Logo" className="w-32 h-8" />
+  <img src="/client/public/images/berkeley.png" alt="UC Berkeley Logo" className="w-32 h-8" />
 );
 
 const PurdueLogo = () => (
   <img
-    src="/images/purdue.png"
+    src="/client/public/images/purdue.png"
     alt="Purdue University Logo"
     className="w-32 h-8"
   />
@@ -46,12 +46,12 @@ const PurdueLogo = () => (
 
 const HPELogo = () => (
   <img
-    src="/images/hpe.png"
+    src="/client/public/images/hpe.png"
     alt="Hewlett Packard Enterprise Logo"
     className="w-32 h-8"
   />
 );
 
 const AWSAILogo = () => (
-  <img src="/images/aws-ai.png" alt="AWS AI Logo" className="w-32 h-8" />
+  <img src="/client/public/images/aws-ai.png" alt="AWS AI Logo" className="w-32 h-8" />
 );
