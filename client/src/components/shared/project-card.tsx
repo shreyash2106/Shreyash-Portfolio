@@ -27,7 +27,7 @@ export default function ProjectCard({
         <CardHeader>
           <CardTitle className="text-[#B86EFF]">{title}</CardTitle>
         </CardHeader>
-        <CardContent className="flex flex-col flex-grow justify-between space-y-4">
+        <CardContent className="flex flex-col flex-grow space-y-4">
           <div className="space-y-4">
             <p className="text-[#E6F1FF]/80">{description}</p>
             <div className="flex flex-wrap gap-2">
@@ -42,7 +42,7 @@ export default function ProjectCard({
               ))}
             </div>
           </div>
-          <div className="flex space-x-4">
+          <div className="flex space-x-4 mt-auto pt-2">
             {github && (
               <a
                 href={github}
