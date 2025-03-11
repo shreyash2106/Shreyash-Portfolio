@@ -47,7 +47,7 @@ export default function Hero() {
 
         {/* Logos Section */}
         <div className="mt-16">
-          <div className="flex justify-center items-center gap-8">
+          <div className="flex items-center gap-8 md:gap-12">
             {logos.map(({ src, alt }, index) => (
               <motion.div
                 key={alt}
@@ -56,12 +56,13 @@ export default function Hero() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="text-center group"
               >
-                <img 
-                  src={src} 
-                  alt={alt} 
-                  className="h-6 w-auto opacity-70 hover:opacity-100 transition-opacity duration-300 filter invert brightness-0" 
-                  style={{ filter: 'brightness(0) invert(1)' }}
-                />
+                <div className="w-20 mx-auto flex items-center justify-center text-[#B86EFF] hover:text-[#B86EFF]/80 transition-colors duration-300">
+                  <img 
+                    src={src} 
+                    alt={alt} 
+                    className="h-8 w-auto object-contain" 
+                  />
+                </div>
               </motion.div>
             ))}
           </div>
