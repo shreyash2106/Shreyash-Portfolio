@@ -4,6 +4,13 @@ import { ChevronDown } from "lucide-react";
 import Background3D from "@/components/three/Background3D";
 
 export default function Hero() {
+  const logos = [
+    { src: "/images/berkeley.png", alt: "UC Berkeley" },
+    { src: "/images/hpe.png", alt: "Hewlett Packard Enterprise" },
+    { src: "/images/aws-ai.png", alt: "AWS AI" },
+    { src: "/images/purdue.png", alt: "Purdue University" },
+  ];
+
   return (
     <section className="min-h-[calc(100vh-4rem)] flex flex-col justify-center relative overflow-hidden">
       <Background3D />
@@ -37,7 +44,28 @@ export default function Hero() {
             <a href="#projects">View my work</a>
           </Button>
         </div>
+
+        {/* Logos Section */}
+        <div className="mt-16">
+          <div className="flex flex-wrap justify-center items-center gap-16 md:gap-24">
+            {logos.map(({ src, alt }, index) => (
+              <motion.div
+                key={alt}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+              >
+                <img 
+                  src={src} 
+                  alt={alt} 
+                  className="w-32 h-8 opacity-70 hover:opacity-100 transition-opacity duration-300 filter brightness-0 invert hover:brightness-100 hover:invert-0" 
+                />
+              </motion.div>
+            ))}
+          </div>
+        </div>
       </motion.div>
+
       <motion.div
         animate={{
           y: [0, 10, 0],

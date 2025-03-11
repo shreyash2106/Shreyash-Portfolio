@@ -1,82 +1,5 @@
 import { motion } from "framer-motion";
 
-// Custom SVG components for institutions
-const BerkeleyLogo = () => (
-  <svg viewBox="0 0 300 50" className="w-32 h-8">
-    <text
-      x="0"
-      y="35"
-      className="font-serif"
-      style={{
-        fill: "currentColor",
-        fontSize: "32px",
-        fontWeight: "bold"
-      }}
-    >
-      Berkeley
-    </text>
-  </svg>
-);
-
-const PurdueLogo = () => (
-  <svg viewBox="0 0 300 50" className="w-32 h-8">
-    <text
-      x="0"
-      y="35"
-      className="font-serif"
-      style={{
-        fill: "currentColor",
-        fontSize: "32px",
-        fontWeight: "bold"
-      }}
-    >
-      PURDUE
-    </text>
-    <text
-      x="0"
-      y="48"
-      style={{
-        fill: "currentColor",
-        fontSize: "14px"
-      }}
-    >
-      UNIVERSITY
-    </text>
-  </svg>
-);
-
-const HPELogo = () => (
-  <svg viewBox="0 0 100 32" className="w-32 h-8">
-    <text
-      x="0"
-      y="25"
-      style={{
-        fill: "currentColor",
-        fontSize: "24px",
-        fontWeight: "bold"
-      }}
-    >
-      HPE
-    </text>
-  </svg>
-);
-
-const AWSAILogo = () => (
-  <svg viewBox="0 0 100 32" className="w-32 h-8">
-    <text
-      x="0"
-      y="25"
-      style={{
-        fill: "currentColor",
-        fontSize: "24px",
-        fontWeight: "bold"
-      }}
-    >
-      AWS AI
-    </text>
-  </svg>
-);
-
 export default function Logos() {
   const logos = [
     { Icon: BerkeleyLogo, name: "UC Berkeley" },
@@ -107,3 +30,20 @@ export default function Logos() {
     </section>
   );
 }
+
+// Custom image components for institutions
+const BerkeleyLogo = () => (
+  <img src="/images/berkeley.png" alt="UC Berkeley Logo" className="w-32 h-8" />
+);
+
+const PurdueLogo = () => (
+  <img src="/images/purdue.png" alt="Purdue University Logo" className="w-32 h-8" />
+);
+
+const HPELogo = () => (
+  <img src="/images/hpe.png" alt="Hewlett Packard Enterprise Logo" className="w-32 h-8" />
+);
+
+const AWSAILogo = () => (
+  <img src="/images/aws-ai.png" alt="AWS AI Logo" className="w-32 h-8" />
+);
