@@ -18,7 +18,7 @@ export function AppLoader() {
             transition={{ delay: 0.5 }}
             className="text-[#E6F1FF]/80 text-lg mt-8"
           >
-            Initializing...
+            Loading neural pathways...
           </motion.p>
         </div>
       </motion.div>
