@@ -47,18 +47,20 @@ export default function Hero() {
 
         {/* Logos Section */}
         <div className="mt-16">
-          <div className="flex flex-wrap justify-center items-center gap-16 md:gap-24">
+          <div className="flex justify-center items-center gap-8">
             {logos.map(({ src, alt }, index) => (
               <motion.div
                 key={alt}
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
+                className="text-center group"
               >
                 <img 
                   src={src} 
                   alt={alt} 
-                  className="w-32 h-8 opacity-70 hover:opacity-100 transition-opacity duration-300 filter brightness-0 invert hover:brightness-100 hover:invert-0" 
+                  className="h-6 w-auto opacity-70 hover:opacity-100 transition-opacity duration-300 filter invert brightness-0" 
+                  style={{ filter: 'brightness(0) invert(1)' }}
                 />
               </motion.div>
             ))}
