@@ -9,9 +9,9 @@ export default function Logos() {
   ];
 
   return (
-    <section className="py-16">
+    <section className="py-8">
       <div className="container mx-auto">
-        <div className="flex flex-wrap justify-center items-center gap-16 md:gap-24">
+        <div className="flex justify-center items-center gap-8 md:gap-12">
           {logos.map(({ Icon, name }, index) => (
             <motion.div
               key={name}
@@ -20,7 +20,7 @@ export default function Logos() {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="text-center group"
             >
-              <div className="w-32 mx-auto flex items-center justify-center text-[#B86EFF] hover:text-[#B86EFF]/80 transition-colors duration-300">
+              <div className="w-20 mx-auto flex items-center justify-center text-[#B86EFF] hover:text-[#B86EFF]/80 transition-colors duration-300">
                 <Icon />
               </div>
             </motion.div>
@@ -33,25 +33,25 @@ export default function Logos() {
 
 // Custom image components for institutions
 const BerkeleyLogo = () => (
-  <img src="/client/public/images/berkeley.png" alt="UC Berkeley Logo" className="w-32 h-8" />
+  <img src="/images/berkeley.png" alt="UC Berkeley Logo" className="h-6 w-auto object-contain" />
 );
 
 const PurdueLogo = () => (
   <img
-    src="/client/public/images/purdue.png"
+    src="/images/purdue.png"
     alt="Purdue University Logo"
-    className="w-32 h-8"
+    className="h-6 w-auto object-contain"
   />
 );
 
 const HPELogo = () => (
   <img
-    src="/client/public/images/hpe.png"
+    src="/images/hpe.png"
     alt="Hewlett Packard Enterprise Logo"
-    className="w-32 h-8"
+    className="h-6 w-auto object-contain"
   />
 );
 
 const AWSAILogo = () => (
-  <img src="/client/public/images/aws-ai.png" alt="AWS AI Logo" className="w-32 h-8" />
+  <img src="/images/aws-ai.png" alt="AWS AI Logo" className="h-6 w-auto object-contain" />
 );
