@@ -1,9 +1,32 @@
 import { motion } from "framer-motion";
+import { useState, useEffect } from "react";
 import SectionHeading from "@/components/shared/section-heading";
 import ProjectCard from "@/components/shared/project-card";
+import { LoadingState } from "@/components/ui/loading-state";
 import { projects } from "@/data/content";
 
 export default function Projects() {
+  const [loading, setLoading] = useState(true);
+
+  // Simulate loading for demo
+  useEffect(() => {
+    const timer = setTimeout(() => setLoading(false), 2000);
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (loading) {
+    return (
+      <section id="projects" className="scroll-mt-16">
+        <SectionHeading
+          title="Featured Projects"
+          subtitle="Some things I've built"
+          className="mb-12"
+        />
+        <LoadingState message="Loading projects..." />
+      </section>
+    );
+  }
+
   return (
     <section id="projects" className="scroll-mt-16">
       <SectionHeading
