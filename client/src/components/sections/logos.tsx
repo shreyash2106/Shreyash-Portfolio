@@ -20,7 +20,13 @@ export default function Logos() {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="text-center group"
             >
-              <div className="w-20 mx-auto flex items-center justify-center text-[#B86EFF] hover:text-[#B86EFF]/80 transition-colors duration-300">
+              <div
+                className={`${
+                  name === "UC Berkeley" || name === "Purdue University"
+                    ? "w-24"
+                    : "w-20"
+                } mx-auto flex items-center justify-center text-[#B86EFF] hover:text-[#B86EFF]/80 transition-colors duration-300`}
+              >
                 <Icon />
               </div>
             </motion.div>
@@ -33,14 +39,18 @@ export default function Logos() {
 
 // Custom image components for institutions
 const BerkeleyLogo = () => (
-  <img src="/images/berkeley.png" alt="UC Berkeley Logo" className="h-6 w-auto object-contain" />
+  <img
+    src="/images/berkeley.png"
+    alt="UC Berkeley Logo"
+    className="h-10 w-auto object-contain"
+  />
 );
 
 const PurdueLogo = () => (
   <img
     src="/images/purdue.png"
     alt="Purdue University Logo"
-    className="h-6 w-auto object-contain"
+    className="h-10 w-auto object-contain"
   />
 );
 
@@ -53,5 +63,9 @@ const HPELogo = () => (
 );
 
 const AWSAILogo = () => (
-  <img src="/images/aws-ai.png" alt="AWS AI Logo" className="h-6 w-auto object-contain" />
+  <img
+    src="/images/aws-ai.png"
+    alt="AWS AI Logo"
+    className="h-6 w-auto object-contain"
+  />
 );

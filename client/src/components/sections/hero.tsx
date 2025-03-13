@@ -27,7 +27,9 @@ export default function Hero() {
           <span className="text-[#E6F1FF] font-serif italic">Shreyash</span>
         </h1>
         <p className="text-xl sm:text-2xl text-[#E6F1FF]/80 max-w-2xl">
-          A passionate software engineer specializing in Machine Learning and AI. Currently pursuing my M.S. in Computer Science at Purdue University.
+          A passionate software engineer specializing in Machine Learning and
+          AI. Currently pursuing my M.S. in Computer Science at Purdue
+          University.
         </p>
         <div className="flex space-x-4">
           <Button
@@ -57,11 +59,18 @@ export default function Hero() {
                 className="text-center group"
               >
                 <div className="mx-auto flex items-center justify-center">
-                  <img 
-                    src={src} 
-                    alt={alt} 
-                    className="h-12 w-auto object-contain"
-                    style={{ filter: 'brightness(0) invert(1) sepia(1) saturate(3) hue-rotate(230deg)' }}
+                  <img
+                    src={src}
+                    alt={alt}
+                    className={`object-contain w-auto ${
+                      alt === "UC Berkeley" || alt === "Purdue University"
+                        ? "h-16"
+                        : "h-11"
+                    }`}
+                    style={{
+                      filter:
+                        "brightness(0) invert(1) sepia(1) saturate(3) hue-rotate(230deg)",
+                    }}
                   />
                 </div>
               </motion.div>
