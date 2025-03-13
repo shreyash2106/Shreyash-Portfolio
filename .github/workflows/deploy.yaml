@@ -37,7 +37,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./client/dist # Adjust to './client/build' if using Create React App
+          path: ./client/src # Adjust to './client/build' if using Create React App
 
   deploy:
     environment:
